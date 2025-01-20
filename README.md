@@ -1,7 +1,8 @@
 Micro Mouse – Automated Maze Solver
 
 Brief Overview:
-This project was an autonomous maze-solving bot developed for the "Shaastra" event held at IIT Madras. Using Dijkstra's algorithm, the bot could navigate a complex maze to reach the goal while avoiding damage to the maze walls.
+- This project was an autonomous maze-solving bot developed for the "Shaastra" event held at IIT Madras. Using Dijkstra's algorithm, the bot could 
+  navigate a complex maze to reach the goal while avoiding damage to the maze walls.
 
 Key Features:
 -	Fully automated maze solver using Dijkstra's algorithm.
@@ -23,4 +24,5 @@ Challenges Solved:
 - Debugging issues with hardware and sensor calibration.
 
 Outcome:
-The Micro Mouse bot successfully navigated the maze, solving it partially. While it encountered some bugs, the project provided valuable insights into robotics, pathfinding algorithms, and hardware-software integration.
+- The Micro Mouse bot successfully navigated the maze, solving it partially. While it encountered some bugs, the project provided valuable insights 
+  into robotics, pathfinding algorithms, and hardware-software integration.
