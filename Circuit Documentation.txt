@@ -1,0 +1,50 @@
+Circuit Documentation
+
+Summary:
+- This circuit integrates an Arduino UNO microcontroller with multiple peripherals including HC-SR04 Ultrasonic Sensors, an L298N DC motor driver, motors with reducers, an SD card module, and a voltage conversion module. The circuit is powered by a 12V battery, and the voltage is regulated to 5V for components requiring lower voltage. The Arduino UNO is programmed to interface with the ultrasonic sensors and the SD card module, as well as to control the motors via the motor driver.
+
+Component List
+- Arduino UNO
+- HC-SR04 Ultrasonic Sensor (x3)
+- L298N DC Motor Driver
+- SD Card Module
+- Battery 12V
+- Motor (x2)
+- Module 12V to 5V
+
+Wiring Details
+
+1] Arduino UNO
+   - D2 connected to TRIG pins of all HC-SR04 Ultrasonic Sensors
+   - D6 connected to ECHO pin of one HC-SR04 Ultrasonic Sensor
+   - D5 connected to ECHO pin of another HC-SR04 Ultrasonic Sensor
+   - D9 connected to ECHO pin of the third HC-SR04 Ultrasonic Sensor
+   - D3 connected to IN1 of L298N DC Motor Driver
+   - D4 connected to IN2 of L298N DC Motor Driver
+   - D7 connected to IN3 of L298N DC Motor Driver
+   - D8 connected to IN4 of L298N DC Motor Driver
+   - D10 connected to CS of SD Card Module
+   - D11 connected to MOSI of SD Card Module
+   - D12 connected to MISO of SD Card Module
+   - D13 connected to SCK of SD Card Module
+
+2] HC-SR04 Ultrasonic Sensors
+   - VCC pins connected to +5V from Module 12V to 5V
+   - GND pins connected to -5V from Module 12V to 5V
+   - L298N DC Motor Driver
+   - IN1, IN2, IN3, IN4 connected to corresponding Arduino UNO pins
+   - OUT1, OUT2 connected to one Motor with Reducer
+   - OUT3, OUT4 connected to another Motor with Reducer
+   - 12V connected to + of Battery 12V
+   - GND connected to - of Battery 12V
+
+3] SD Card Module
+   - CS, SCK, MOSI, MISO connected to corresponding Arduino UNO pins
+   - VCC connected to +5V from Module 12V to 5V
+   - GND connected to -5V from Module 12V to 5V
+
+4] Motors
+   - 3 - 6 VCC connected to OUT2 and OUT4 of L298N DC Motor Driver
+   - GND connected to OUT1 and OUT3 of L298N DC Motor Driver
+
+5] Module 12V to 5V
